@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Landry | Développeur Web</title>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landry Poincaré | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #444;
+    }
+    .project, .contact {
+      background: white;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .project a, .cv-button a {
+      text-decoration: none;
+      color: #007acc;
+    }
+    .cv-button {
+      margin: 1rem 0;
+      text-align: center;
+    }
+    .cv-button a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #007acc;
+      color: white;
+      border-radius: 4px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 0.5rem;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #eee;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenue sur mon portfolio 👋🏽</h1>
-  <p>Je développe des applis web et mobile, je joue aux échecs et je respire proprement (cf. James Nestor).</p>
+  <header>
+    <h1>Landry Poincaré</h1>
+    <p>Développeur Web & Mobile | Passionné d'échecs, tech et panafricanisme</p>
+  </header>
+  
+  <section>
+    <h2>Mes Projets</h2>
+
+    <div class="project">
+      <h3>Analyse du Sol App</h3>
+      <p>Une application mobile en React Native qui analyse la composition du sol pour l'agriculture intelligente.</p>
+      <p><a href="https://github.com/landrypoincare/analyse-sol" target="_blank">Voir sur GitHub</a></p>
+    </div>
+
+    <div class="project">
+      <h3>Système de Paiement en Ligne</h3>
+      <p>Application web sécurisée pour les paiements en ligne, avec intégration d'API bancaires.</p>
+      <p><a href="https://github.com/landrypoincare/paiement-en-ligne" target="_blank">Voir sur GitHub</a></p>
+    </div>
+
+    <div class="cv-button">
+      <a href="cv-landry-poincare.pdf" download>Télécharger mon CV</a>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="contact">
+      <form action="mailto:tonemail@example.com" method="POST" enctype="text/plain">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Landry Poincaré - Tous droits réservés.
+  </footer>
 </body>
 </html>
